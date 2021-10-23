@@ -1,3 +1,5 @@
+/*FRONT END*/
+
 /*Just Java*/
 function computeJava() {
     let javaQty = document.getElementById("javaQty").value;
@@ -65,3 +67,40 @@ function computeTotal() {
 function test_alpha(quantity) {
     return /^[0-9]+$/.test(quantity); 
 }
+
+/*BACK END*/
+
+/*Just Java*/
+function editJava() {
+    if (document.getElementById('javaRadio').checked) {
+        document.getElementById('javaForm').innerHTML=`<label>New Price: </label>
+        <input type="number" size="3" min="0" step="0.01" name="updatedJavaPrice">`        
+    } 
+    else {
+    document.getElementById('javaForm').innerHTML='';
+    }
+}
+
+/*Cafe au Lait*/
+function editCafe(){
+    if (document.getElementById('cafeRadio').checked) {
+      document.getElementById('cafeForm').innerHTML=`<label>New Price (Single Shot): </label>
+      <input type="number" size="3" min="0" step="0.01" name="updatedCafeSinglePrice">
+      <label>New Price (Double Shot): </label>
+      <input type="number" size="3" min="0" step="0.01" name="updatedCafeDoublePrice">`        
+    } else {
+      document.getElementById('cafeForm').innerHTML='';
+    }
+  }
+
+/*Iced Cappucino*/
+  function editCappu(){
+    if (document.getElementById('cappuRadio').checked) {
+      document.getElementById('cappuForm').innerHTML=`<label>New Price (Single Shot): </label>
+      <input type="number" size="3" min="0" step="0.01" name="updatedCappuSinglePrice">
+      <label>New Price (Double Shot): </label>
+      <input type="number" size="3" min="0" step="0.01" name="updatedCappuDoublePrice">`        
+    } else {
+      document.getElementById('cappuForm').innerHTML='';
+    }
+  }

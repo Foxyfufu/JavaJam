@@ -11,7 +11,7 @@
     <div id="wrapper">
         <header>
             <h1>
-                <img src="javajamlogo.png" alt="Logo">
+                <img src="assets/javajamlogo.png" alt="Logo">
             </h1>
         </header>
     
@@ -21,7 +21,7 @@
                     <ul>
                         <b> 
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="menu.php">Menu</a></li>
                             <li><a href="music.html">Music</a></li>
                             <li><a href="jobs.html">Jobs</a></li>
                         </b>
@@ -47,6 +47,7 @@
                                 <br><strong>Endless Cup $2.00</strong></td>
                             <td><input type="number" id="javaQty" size="3" min="0" onchange="computeJava()"></td>
                             <td class="tableSum">$<label class="menuLabel" id="javaPrice">0</label></td>
+                            <td><div id="javaForm"></div></td>
                         </tr>
 
                         <tr>
