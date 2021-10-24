@@ -25,7 +25,7 @@
                             <li><a href="menu.php">Menu</a></li>
                             <li><a href="music.html">Music</a></li>
                             <li><a href="jobs.html">Jobs</a></li>
-                            <li><a href="adminPrice.php">Edit Price</a></li>
+                            <li><a href="adminMenu.php">Edit Price</a></li>
                             <li><a href="adminReport.php">Sales Report</a></li>
                         </b>
                     </ul>
@@ -36,7 +36,7 @@
                 <h2>Click to update product prices:</h2>
         
                 <div class="content">
-                    <form action='adminPrice.php' method='post'>
+                    <form action='adminMenu.php' method='post'>
                         <table class="musictable" style = "border: 0">
                             <tr>
                                 <td>
